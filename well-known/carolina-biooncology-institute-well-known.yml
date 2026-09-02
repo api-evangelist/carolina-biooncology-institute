@@ -1,0 +1,34 @@
+generated: '2026-09-02'
+method: probed
+source: live GET of the named /.well-known/ path list against every host in apis.yml
+note: >-
+  Every named /.well-known/ path 404s on the Carolina BioOncology Institute web host.
+  This file records a probed ABSENCE, not a served surface, so no WellKnown or
+  SecurityTxt pointer is wired into apis.yml. The origin is a WordPress site behind a
+  GoDaddy managed-WordPress edge; its 404 handler returns the themed HTML error page
+  (~343KB, text/html) rather than an empty body, which is why size is recorded here
+  alongside the status.
+hosts:
+- host: carolinabiooncology.org
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

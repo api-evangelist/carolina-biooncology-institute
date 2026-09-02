@@ -1,0 +1,65 @@
+# Carolina BioOncology Institute
+
+> Carolina BioOncology Institute (CBOI) is a physician-owned Phase I oncology clinical
+> research clinic and translational laboratory in Huntersville, North Carolina, founded by
+> Dr. John Powderly II. It runs first-in-human and early-phase immunotherapy trials for
+> patients with advanced solid tumors, and operates the Human Applications Lab (HAL) — a
+> cGMP-capable cell-processing and biorepository facility developing autologous cellular
+> therapies — alongside RUO analytical and clinical lab analysis services. CBOI is the
+> parent company of BioCytics.
+
+Provenance: generated 2026-09-02 by the API Evangelist enrichment pipeline from
+apis.yml plus a live probe of carolinabiooncology.org. Method: generated. Nothing here
+is asserted on the company's behalf that was not read from its own public site.
+
+## API surface
+
+Carolina BioOncology Institute publishes **no public API, no developer portal, no SDK and
+no machine-readable contract**. This was established by probe, not assumption:
+
+- `https://carolinabiooncology.org/openapi.json` — 404
+- `https://carolinabiooncology.org/swagger.json` — 404
+- `https://carolinabiooncology.org/api-docs` — 404
+- `https://carolinabiooncology.org/graphql` — 404
+- `https://carolinabiooncology.org/llms.txt` — 404
+- every named `/.well-known/` path (security.txt, openid-configuration,
+  oauth-authorization-server, api-catalog, ai-plugin.json, agent-card.json, agent.json) — 404
+- `api.carolinabiooncology.org` and `developer.carolinabiooncology.org` — do not resolve
+
+The one machine-readable surface on the domain is the stock WordPress REST API discovery
+document at `https://carolinabiooncology.org/wp-json/` (HTTP 200, 610 routes across
+`wp/v2`, `oembed/1.0`, `contact-form-7/v1`, `yoast/v1`, `aioseo/v1`, `google-site-kit/v1`
+and other plugin namespaces). That is content-management infrastructure emitted by the CMS
+and its plugins, not a product API the company designed, documented or supports, so it is
+deliberately NOT registered as an API of this provider.
+
+CBOI is an openEHR **Industry Partner** — an adopter and coalition member of the openEHR
+health-record specifications, not a publisher of them. That affiliation is why this company
+entered the API Evangelist harvest backlog; it does not imply a CBOI-operated openEHR
+endpoint, and no such endpoint was found.
+
+## Pages
+
+- [Home](https://carolinabiooncology.org/): clinic overview and contact.
+- [About Us](https://carolinabiooncology.org/about-us/): mission, history, leadership.
+- [Research | Clinical Trials](https://carolinabiooncology.org/research-clinical-trials/): the
+  currently enrolling trial list, each entry linking to its ClinicalTrials.gov record.
+- [Human Applications Lab](https://carolinabiooncology.org/human-applications-lab/): cell
+  processing, biorepository, cGMP manufacturing, facilities and instrumentation.
+- [Services](https://carolinabiooncology.org/human-applications-lab/services/): laboratory
+  services offered to sponsors and partners.
+- [Team](https://carolinabiooncology.org/team/): investigators and clinical staff.
+- [Patient Info](https://carolinabiooncology.org/patient-info/): what trial participation involves.
+- [News](https://carolinabiooncology.org/news/): announcements ([RSS](https://carolinabiooncology.org/feed/)).
+- [FAQ](https://carolinabiooncology.org/faq/)
+- [Careers](https://carolinabiooncology.org/careers/)
+- [Contact](https://carolinabiooncology.org/contact/): +1 (704) 947-6599, info@carolinabiooncology.org.
+- [Privacy Policy](https://carolinabiooncology.org/privacy-policy/)
+
+## Optional
+
+- Sitemap index: https://carolinabiooncology.org/sitemap.xml
+- robots.txt: https://carolinabiooncology.org/robots.txt (allows all agents; no disallow rules)
+- Structured trial data for CBOI trials is published by ClinicalTrials.gov, not by CBOI —
+  agents needing machine-readable trial records should query the ClinicalTrials.gov API and
+  filter on this facility rather than scraping this site.
